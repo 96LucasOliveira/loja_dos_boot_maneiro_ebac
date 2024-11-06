@@ -1,0 +1,239 @@
+/* Reseta margens, preenchimentos e define a caixa de modelo */
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui margens e preenchimentos no cálculo do tamanho total do elemento */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão como 'Roboto' */
+}
+
+/* Container centralizado */
+.container {
+    max-width: 1024px; /* Define a largura máxima do container */
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0 20px; /* Adiciona um padding de 20px nas laterais */
+}
+
+/* Estilo do header */
+header {
+    background-color: rgb(73, 45, 32); /* Cor de fundo do header */
+    padding-top: 16px; /* Espaçamento interno superior */
+    color: #fff; /* Cor do texto */
+}
+
+header h1 {
+    font-size: 26px;
+}
+
+/* Alinha o conteúdo do header */
+header > .container {
+    justify-content: space-between; /* Espaça os itens do header igualmente */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding-bottom: 16px; /* Espaçamento interno inferior */
+}
+
+/* Estilo do menu de navegação (inicialmente oculto) */
+nav {
+    background-color: rgb(68, 46, 26); /* Cor de fundo do menu */
+    padding: 16px 0; /* Padding superior e inferior */
+    display: none; /* Esconde o menu por padrão */
+}
+
+/* Estilo das listas do menu */
+nav li {
+    list-style: none; /* Remove os marcadores da lista */
+    display: inline; /* Exibe os itens na horizontal */
+    margin-right: 16px; /* Espaço entre os itens do menu */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo dos links do menu */
+nav li a {
+    color: #fff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo do menu hambúrguer */
+.menu-hamburguer {
+    width: 32px; /* Largura do menu hambúrguer */
+    cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+    margin-left: auto; /* Alinha o menu hambúrguer à direita */
+}
+
+/* Estilo das barras do menu hambúrguer */
+.menu-hamburguer span {
+    height: 2px; /* Altura das barras */
+    width: 100%; /* Largura das barras */
+    background-color: #fff; /* Cor das barras */
+    display: block; /* Exibe as barras como blocos */
+    margin-bottom: 4px; /* Espaçamento entre as barras */
+}
+
+/* Flexbox para alinhar itens */
+.container-flex {
+    display: flex; /* Usa o flexbox para alinhar os itens */
+}
+
+/* Estilo da imagem da seção 'sobre a loja' */
+.sobre-a-loja img {
+    max-width: 600px; /* Limita a largura máxima da imagem */
+    margin-right: 18px; /* Espaçamento à direita da imagem */
+}
+
+/* Estilo do título da seção 'sobre a loja' */
+.sobre-a-loja h2 {
+    color: rgb(68, 46, 26); /* Cor do texto do título */
+    border-bottom: 3px solid rgb(73, 45, 32); /* Adiciona uma borda inferior */
+    padding-bottom: 16px; /* Espaço entre o título e a borda */
+}
+
+/* Espaçamento das seções */
+section {
+    padding: 48px 0; /* Espaçamento interno nas seções */
+}
+
+/* Estilo dos títulos das seções */
+section h2 {
+    margin-bottom: 16px; /* Espaço abaixo do título */
+}
+
+/* Estilo da seção de produtos */
+.produtos {
+    width: 100%; /* Ocupa 100% da largura disponível */
+    max-width: 1024px; /* Largura máxima da seção de produtos */
+    margin: 0 auto; /* Centraliza a seção de produtos */
+    margin-bottom: 24px; /* Espaçamento inferior */
+}
+
+/* Estilo do título da seção de produtos */
+.produtos h2 {
+    margin-bottom: 32px; /* Espaçamento abaixo do título */
+    border-bottom: 3px solid rgb(73, 45, 32); /* Borda inferior do título */
+    color: rgb(68, 46, 26); /* Cor do texto */
+    padding-bottom: 16px; /* Espaço entre o título e a borda */
+}
+
+/* Grid para a exibição dos produtos */
+.produtos-grid {
+    display: grid; /* Usa o grid para disposição dos produtos */
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas de igual tamanho */
+    gap: 20px; /* Espaço entre os itens do grid */
+    width: 100%; /* Ocupa 100% da largura */
+    margin-top: 16px; /* Espaço superior */
+}
+
+/* Estilo de cada produto */
+.produto {
+    background-color: #f8f8f8; /* Cor de fundo dos produtos */
+    border: 1px solid #ddd; /* Borda de cada produto */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilo dos botões */
+button {
+    display: block; /* Exibe o botão como um bloco */
+    width: 100%; /* Largura total do botão */
+    padding: 8px 0; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    background-color: rgb(73, 45, 32); /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Cursor de mãozinha */
+    border-radius: 6px; /* Bordas arredondadas */
+    margin-top: 8px; /* Espaço superior */
+}
+
+/* Estilo das imagens dentro dos produtos */
+.produto img {
+    max-width: 100%; /* A imagem não ultrapassa a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas (opcional) */
+}
+
+.produto p {
+    font-size: 14px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: rgb(73, 45, 32); /* Cor de fundo */
+    padding-top: 16px; /* Espaçamento superior */
+    color: #fff; /* Cor do texto */
+    font-size: 12px;
+    
+}
+
+/* Estilo para telas de tablet (1024px ou menor) */
+@media (max-width: 1024px) {
+    .produtos-grid {
+        grid-template-columns: repeat(3, 1fr); /* Três colunas para telas menores */
+    }
+
+    .produto {
+        padding: 10px; /* Menor padding para economizar espaço */
+    }
+}
+
+/* Estilo para tablets (de 641px a 1023px) */
+@media (max-width: 1023px) and (min-width: 641px) {
+    .container-flex {
+        flex-direction: column; /* Organiza os itens verticalmente */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .sobre-a-loja img {
+        max-width: 100%; /* A imagem ocupa toda a largura */
+        margin-right: 0; /* Remove o espaço à direita */
+        margin-bottom: 16px; /* Espaço inferior */
+    }
+
+    .produtos {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-top: 32px; /* Espaço superior */
+    }
+
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr); /* Dois produtos por linha */
+        gap: 16px; /* Espaço entre os produtos */
+    }
+
+    .menu-hamburguer {
+        margin-left: 0; /* Remove o espaço à esquerda e centraliza */
+    }
+}
+
+/* Estilo para dispositivos móveis (até 640px) */
+@media (max-width: 640px) {
+    .container-flex {
+        flex-direction: column; /* Organiza os itens verticalmente */
+        align-items: center; /* Alinha os itens ao centro */
+    }
+
+    .sobre-a-loja img {
+        max-width: 100%; /* A imagem ocupa toda a largura */
+        margin-right: 0; /* Remove o espaço à direita */
+        margin-bottom: 16px; /* Espaço inferior */
+    }
+
+    .produtos {
+        width: 100%; /* Ocupa 100% da largura */
+        margin-top: 32px; /* Espaço superior */
+    }
+
+    .produtos-grid {
+        grid-template-columns: 1fr; /* Um produto por linha */
+        gap: 16px; /* Espaço entre os produtos */
+    }
+
+    header > .container {
+        justify-content: center; /* Centraliza o conteúdo do header */
+    }
+
+    .menu-hamburguer {
+        margin-left: 0; /* Remove o espaço à esquerda e centraliza */
+    }
+}
